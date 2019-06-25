@@ -18,6 +18,22 @@ A combination between people tracking and age and gender detection
 - imutils
 - Because the model files is bigger than 25MB so I can't put it here, you need to download it -->**[__here__](https://talhassner.github.io/home/publication/2015_CVPR)** <-- and place them in the folder age_gender_models.
 
+# Install Python 3.5 in Ubuntu 18.04
+```
+sudo apt-get install build-essential checkinstall
+sudo apt-get install libreadline-gplv2-dev libncursesw5-dev libssl-dev libsqlite3-dev tk-dev libgdbm-dev libc6-dev libbz2-dev
+
+cd /usr/src
+wget https://www.python.org/ftp/python/3.5.6/Python-3.5.6.tgz
+
+sudo tar xzf Python-3.5.6.tgz
+
+cd Python-3.5.6
+sudo ./configure --enable-optimizations
+sudo make altinstall
+
+```
+
 # Implementation
 - Run `python object_tracker.py` (sorry for the name, it should be people_tracker but I was too lazy to change it :))
 
